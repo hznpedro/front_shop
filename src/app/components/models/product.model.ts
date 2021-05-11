@@ -1,4 +1,4 @@
-export interface ProductModelServer {
+export class ProductModelServer {
   id: number;
   title: string;
   image: string;
@@ -10,7 +10,7 @@ export interface ProductModelServer {
   short_desc: string;
 }
 
-export interface ServerResponse {
+export class ServerResponse {
   count: number;
   products: ProductModelServer[];
 }

@@ -1,18 +1,21 @@
 import {ProductModelServer} from './product.model';
 
-export interface CartModelServer {
-  total: number;
-  data: [{
-    product: ProductModelServer,
-    numInCart: number
-    }];
+export class CartModelServer {
+  total = 0;
+  data: CartItemServer[] = [];
 }
 
-export interface CartModelPublic {
-  total: number;
-  prodData: [{
-    id: number,
-    inCart: number
-    }
-  ];
+export class CartModelPublic {
+  total = 0;
+  prodData: CartItemPublic[] = [];
+}
+
+export class CartItemServer {
+  numInCart: number;
+  product: ProductModelServer;
+}
+
+export class CartItemPublic {
+  id: number;
+  inCart: number;
 }
