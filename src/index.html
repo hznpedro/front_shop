@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>-->
+  <script src="assets/js/jquery-.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/anim.js"></script>
+  <script>
+    //----HOVER CAPTION---//
+    jQuery(document).ready(function ($) {
+      $('.fadeshop').hover(
+        function(){
+          $(this).find('.captionshop').fadeIn(150);
+        },
+        function(){
+          $(this).find('.captionshop').fadeOut(150);
+        }
+      );
+    });
+  </script>
+
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

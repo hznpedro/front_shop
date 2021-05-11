@@ -1,0 +1,18 @@
+.carousel-inner {
+  height: 80vh;
+  margin-top: 53px;
+}
+@media (max-width: 768px){
+  #myCarousel{
+    display: none;
+  }
+  .item {
+    .content {
+      margin-top: 53px;
+    }
+  }
+}
+
+.disabled{
+  cursor: not-allowed;
+}
